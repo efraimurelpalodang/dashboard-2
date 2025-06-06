@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-  --color-primary: #7494ec;
-  --color-navi: #153d77;
+  --clr-primary: #7494ec;
+  --clr-navi: #153d77;
   --bg-body: #f4f7fc;
   --clr-gray: #b5b5bd;
   --bg-active: #E9ECEF;
   --clr-white: #ffffff;
 }
 
+* {
+  list-style-type: none !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 body {
   background: var(--bg-body) !important;
   font-family: "Inter", sans-serif !important;
 }
 main > aside {
   background: var(--clr-white) !important;
-  min-width: 15.5rem !important;
+  min-width: 15.8rem !important;
   row-gap: 2rem !important;
   padding-inline: .5rem !important;
 }
 main > aside > .judul > h1 {
-  background: linear-gradient(to left, var(--color-navi), var(--color-primary)) !important;
+  background: linear-gradient(to left, var(--clr-navi), var(--clr-primary)) !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
@@ -38,30 +44,72 @@ main > aside .profile-pengguna p:nth-child(3) {
   font-size: .8rem;
   margin-top: -.3rem;
   color: var(--clr-gray);
+  text-decoration: none;
 }
-/*! list style */
-.section-title {
+
+/*! list menu style */
+main > aside ul .judul-list {
   display: flex !important;
   align-items: center !important;
   font-size: .8rem !important;
   font-weight: 300 !important;
   color: var(--clr-gray) !important;
   position: relative !important;
-  left:-2.5rem;
-  width: 124%;
+  width: 100%;
 }
-.section-title::before {
+main > aside ul .judul-list::before {
   content: "" !important;
   display: inline-block !important;
-  width: 20% !important;           
+  width: 7% !important;           
   height: .5px !important;
   background-color: #d0cfd1 !important;
   margin-right: 5px !important;
 }
-.section-title::after {
+main > aside ul .judul-list::after {
   content: "" !important;
   flex: 1 !important;               
   height: .5px !important;
   background-color: #d0cfd1 !important;
   margin-left: 10px !important;
+}
+main > aside > ul {
+  padding: 0 !important;
+  row-gap: .5rem !important;
+}
+main > aside ul li > a {
+  padding: .5rem .7rem !important;
+  border-radius: .2rem !important;
+  transition: .3s all !important;
+}
+main > aside ul li > a.aktif {
+  background: var(--bg-active) !important; /** untuk hover*/
+  color: var(--clr-navi) !important;
+}
+main > aside ul li > a:hover,
+main > aside ul li > ul > a:hover {
+  color: var(--clr-navi) !important;
+}
+main > aside ul li > a,
+main > aside ul li > ul > a {
+  color: var(--clr-gray) !important;
+}
+main > aside ul li > a > span {
+  column-gap: .8rem !important;
+}
+main > aside ul li > a > i {
+  font-size: .8rem !important;
+}
+/*todo: list sub-menu style */
+main > aside ul li > ul {
+  margin-left: 2rem !important;
+}
+main > aside ul li > ul > a {
+  display: flex;
+  padding: .5rem .7rem !important;
+  font-size: .9rem;
+  margin-bottom: -.5rem !important;
+  transition: .3s all;
+}
+main > aside ul li > ul > a.aktif {
+  color: var(--clr-navi) !important;
 }
