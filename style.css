@@ -24,6 +24,8 @@ main > aside {
   min-width: 15.8rem !important;
   row-gap: 2rem !important;
   padding-inline: .5rem !important;
+  overflow-y: auto !important;
+  scrollbar-width: none !important;
 }
 main > aside > .judul > h1 {
   background: linear-gradient(to left, var(--clr-navi), var(--clr-primary)) !important;
@@ -41,10 +43,10 @@ main > aside .profile-pengguna img {
   border-radius: 100% !important;
 }
 main > aside .profile-pengguna p:nth-child(3) {
-  font-size: .8rem;
-  margin-top: -.3rem;
-  color: var(--clr-gray);
-  text-decoration: none;
+  font-size: .8rem !important;
+  margin-top: -.3rem !important;
+  color: var(--clr-gray) !important;
+  text-decoration: none !important;
 }
 
 /*! list menu style */
@@ -96,19 +98,24 @@ main > aside ul li > ul > a {
 main > aside ul li > a > span {
   column-gap: .8rem !important;
 }
+main > aside ul li > a > span > i {
+  color: var(--clr-navi) !important;
+  font-size: 1.1rem !important;
+}
 main > aside ul li > a > i {
   font-size: .8rem !important;
 }
 /*todo: list sub-menu style */
-main > aside ul li > ul {
+main > aside ul li > ul.sub-menu {
   margin-left: 2rem !important;
+  display: none !important; /** sub-menu hidden */ 
 }
 main > aside ul li > ul > a {
-  display: flex;
+  display: flex !important;
   padding: .5rem .7rem !important;
-  font-size: .9rem;
+  font-size: .9rem !important;
   margin-bottom: -.5rem !important;
-  transition: .3s all;
+  transition: .3s all !important;
 }
 main > aside ul li > ul > a.aktif {
   color: var(--clr-navi) !important;
