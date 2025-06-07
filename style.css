@@ -123,3 +123,22 @@ aside > nav ul li > ul > a {
 aside > nav ul li > ul > a.aktif {
   color: var(--clr-navi) !important;
 }
+
+/*todo: main style start */
+main {
+  min-height: 100vh !important;
+  margin-left: 16rem !important;
+  padding: 1.5rem !important;
+  /* color: var(--clr-navi); */
+}
+main .row .halo > p:nth-child(2) {
+  color: var(--clr-navi) !important;
+}
+main .informasi img {
+  width: 3rem !important;
+}
+main .informasi .data p:nth-child(2) {
+  font-size: .8rem !important;
+  margin-top: -.4rem !important;
+}
+/*todo: main style end */
