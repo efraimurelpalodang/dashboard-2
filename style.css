@@ -19,7 +19,7 @@ body {
   background: var(--bg-body) !important;
   font-family: "Inter", sans-serif !important;
 }
-main > aside {
+aside > nav {
   background: var(--clr-white) !important;
   min-width: 15.8rem !important;
   row-gap: 2rem !important;
@@ -28,22 +28,22 @@ main > aside {
   scrollbar-width: none !important;
   transition: .4s all;
 }
-main > aside > .judul > h1 {
+aside > nav > .judul > h1 {
   background: linear-gradient(to left, var(--clr-navi), var(--clr-primary)) !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
 /** profile-pengguna start */
-main > aside .profile-pengguna {
+aside > nav .profile-pengguna {
   color: var(--color-navi) !important;
 }
-main > aside .profile-pengguna img {
+aside > nav .profile-pengguna img {
   width: 4rem !important;
   height: 4rem !important;
   border-radius: 100% !important;
 }
-main > aside .profile-pengguna p:nth-child(3) {
+aside > nav .profile-pengguna p:nth-child(3) {
   font-size: .8rem !important;
   margin-top: -.3rem !important;
   color: var(--clr-gray) !important;
@@ -51,7 +51,7 @@ main > aside .profile-pengguna p:nth-child(3) {
 }
 
 /*! list menu style */
-main > aside ul .judul-list {
+aside > nav ul .judul-list {
   display: flex !important;
   align-items: center !important;
   font-size: .8rem !important;
@@ -60,7 +60,7 @@ main > aside ul .judul-list {
   position: relative !important;
   width: 100%;
 }
-main > aside ul .judul-list::before {
+aside > nav ul .judul-list::before {
   content: "" !important;
   display: inline-block !important;
   width: 7% !important;           
@@ -68,58 +68,58 @@ main > aside ul .judul-list::before {
   background-color: #d0cfd1 !important;
   margin-right: 5px !important;
 }
-main > aside ul .judul-list::after {
+aside > nav ul .judul-list::after {
   content: "" !important;
   flex: 1 !important;               
   height: .5px !important;
   background-color: #d0cfd1 !important;
   margin-left: 10px !important;
 }
-main > aside > ul {
+aside > nav > ul {
   padding: 0 !important;
   row-gap: .5rem !important;
 }
-main > aside ul li > a {
+aside > nav ul li > a {
   padding: .5rem .7rem !important;
   border-radius: .2rem !important;
   transition: .3s all !important;
 }
-main > aside ul li > a.aktif {
+aside > nav ul li > a.aktif {
   background: var(--bg-active) !important; /** untuk hover*/
   color: var(--clr-navi) !important;
 }
-main > aside ul li > a:hover,
-main > aside ul li > ul > a:hover {
+aside > nav ul li > a:hover,
+aside > nav ul li > ul > a:hover {
   color: var(--clr-navi) !important;
 }
-main > aside ul li > a,
-main > aside ul li > ul > a {
+aside > nav ul li > a,
+aside > nav ul li > ul > a {
   color: var(--clr-gray) !important;
 }
-main > aside ul li > a > span {
+aside > nav ul li > a > span {
   column-gap: .8rem !important;
 }
-main > aside ul li > a > span > i {
+aside > nav ul li > a > span > i {
   color: var(--clr-navi) !important;
   font-size: 1.1rem !important;
 }
-main > aside ul li > a > i {
+aside > nav ul li > a > i {
   font-size: .8rem !important;
 }
 /*todo: list sub-menu style */
-main > aside ul li > ul {
+aside > nav ul li > ul {
   margin-left: 2rem !important;
 }
-main > aside ul li > ul#sub-menu {
+aside > nav ul li > ul#sub-menu {
   display: none; /** sub-menu hidden */ 
 }
-main > aside ul li > ul > a {
+aside > nav ul li > ul > a {
   display: flex !important;
   padding: .5rem .7rem !important;
   font-size: .9rem !important;
   margin-bottom: -.5rem !important;
   transition: .3s all !important;
 }
-main > aside ul li > ul > a.aktif {
+aside > nav ul li > ul > a.aktif {
   color: var(--clr-navi) !important;
 }
