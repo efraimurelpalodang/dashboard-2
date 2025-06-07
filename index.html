@@ -26,7 +26,7 @@
           <img src="assets/images/default.jpeg" alt="profile" class="gambar">
           <p class="mb-0 fw-medium">jhon dae</p>
           <p class="mb-0">kepooanda@gmail.co.id</p>
-          <p>anggota</p>
+          <p>administrator</p>
         </div>
         <!-- list -->
         <ul class="d-flex flex-column">
@@ -128,110 +128,138 @@
 
     <!-- main start -->
     <main>
-      <section class="row text-capitalize">
-        <div class="col-sm-12 fw-bold fs-2 halo">
-          <p>dashboard informasi</p>
-          <p class="fw-medium fs-6">hallo, jhon dae selamat datang di halaman dashboard</p>
-        </div>
-      </section>
-      <section class="row informasi mt-5 justify-content-sm-center">
-        <div class="col d-flex align-items-center justify-content-around">
-          <img src="assets/png/bukuu.png" alt="gambar">
-          <div class="data">
-            <p class="fw-bold fs-5">4656 stok</p>
-            <p>Buku</p>
+      <section class="row">
+        <div class="col-sm-4 fw-bold fs-2 border-end px-4 hallo">
+          <div class="border-bottom pb-4 text-capitalize">
+            <p class="fs-6 mb-1">halaman dashboard</p>
+            <p class="fs-4">selamat datang,</p>
+            <p class="fs-4">jhon dae</p>
           </div>
-        </div>
-        <div class="col d-flex align-items-center justify-content-around">
-          <img src="assets/png/rak.png" alt="gambar">
-          <div class="data">
-            <p class="fw-bold fs-5">23 rak buku</p>
-            <p>E-Perpusjar</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-center justify-content-around">
-          <img src="assets/png/kategori.png" alt="gambar">
-          <div class="data">
-            <p class="fw-bold fs-5">11 kategori</p>
-            <p>E-Perpusjar</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-center justify-content-around">
-          <img src="assets/png/anggota.png" alt="gambar">
-          <div class="data">
-            <p class="fw-bold fs-5">4 anggota</p>
-            <p>E-Perpusjar</p>
-          </div>
-        </div>
-        <div class="col d-flex align-items-center justify-content-around">
-          <img src="assets/png/transaksi.png" alt="gambar">
-          <div class="data">
-            <p class="fw-bold fs-5">6 transaksi</p>
-            <p>peminjaman</p>
-          </div>
-        </div>
-      </section>
-      <section class="mt-5">
-        <div class="row gap-2 table-informasi">
-          <div class="col-sm-9 p-4 shadow-sm rounded">
-            <div class="laporan pb-4">
-              <h1 class="text-capitalize fw-bold fs-3">informasi tambahan</h1>
-              <p>Tabel informasi tambahan tentang aktivitas pengguna</p>
+          <!-- laporan -->
+          <div class="py-4 border-bottom laporan">
+            <div class="fs-6 fw-light d-flex align-items-center justify-content-between">
+              <h1 class="fs-6 fw-light">Laporan hari ini</h1>
+              <p>07/06/2025 <i class="bi bi-calendar2-event ms-2"></i></p>
             </div>
-            <div class="tempat-tabel">
+            <div class="d-flex align-items-center informasi mt-1">
+              <i class="bi bi-person-fill-up"></i>
+              <span class="d-flex align-items-end">
+                <p>0</p>
+                <p class="fs-6 mb-2 ms-1">Anggota Baru</p>
+              </span>
+            </div>
+            <div class="d-flex align-items-center informasi mt-1">
+              <i class="bi bi-book"></i>
+              <span class="d-flex align-items-end">
+                <p>0</p>
+                <p class="fs-6 mb-2 ms-1">Peminjaman</p>
+              </span>
+            </div>
+            <div class="d-flex align-items-center informasi mt-1">
+              <i class="bi bi-repeat"></i>
+              <span class="d-flex align-items-end">
+                <p>0</p>
+                <p class="fs-6 mb-2 ms-1">Pengembalian</p>
+              </span>
+            </div>
+            <div class="d-flex align-items-center informasi mt-1">
+              <i class="bi bi-clipboard2-check"></i>
+              <span class="d-flex align-items-end">
+                <p>1</p>
+                <p class="fs-6 mb-2 ms-1">Jatuh tempo</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- kanan -->
+        <div class="col">
+          <div class="px-4 perpustakaan">
+            <div>
+              <h1 class="fs-6 fw-light">Informasi perpustakaan e-perpusjar</h1>
+            </div>
+            <div class="row mt-4 kumpulan-kotak text-capitalize">
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/buku.png" alt="buku">
+                <div class="data">
+                  <p>92</p>
+                  <p>buku</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/bukuu.png" alt="buku">
+                <div class="data">
+                  <p>4656</p>
+                  <p>stok buku</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/rak.png" alt="buku">
+                <div class="data">
+                  <p>92</p>
+                  <p>rak buku</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3 kumpulan-kotak text-capitalize">
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/kategori.png" alt="buku">
+                <div class="data">
+                  <p>11</p>
+                  <p>kategori</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/anggota.png" alt="buku">
+                <div class="data">
+                  <p>4</p>
+                  <p>anggota</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-center kotak rounded shadow-sm">
+                <img src="assets/png/transaksi.png" alt="buku">
+                <div class="data">
+                  <p>11</p>
+                  <p>transaksi peminjaman</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="tabel mt-3 border-top p-4">
+            <div class="text-capitalize mb-4">
+              <h1 class="fs-5 fw-light">informasi aktifitas pengguna</h1>
+            </div>
+            <div>
               <table>
-                <thead>
-                  <tr class="text-uppercase border-top border-bottom">
-                    <th scope="col">pengguna</th>
-                    <th scope="col">peran</th>
-                    <th scope="col">jenis kelamin</th>
-                    <th scope="col">login terakhir</th>
+                <thead class="border-bottom border-top">
+                  <tr>
+                    <th>pengguna</th>
+                    <th>jenis kelamin</th>
+                    <th>peran</th>
+                    <th>terakhir login</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="border-top border-bottom text-capitalize">
+                  <tr class="border-bottom text-capitalize">
                     <td class="d-flex align-items-center">
-                      <img src="assets/images/default.jpeg" alt="profile" class="rounded-circle me-3">
-                      <div class="keterangan">
+                      <img src="assets/images/default.jpeg" alt="gambar-profil" class="rounded-circle">
+                      <div class="info ms-3">
                         <p class="fw-semibold">jhon dae</p>
-                        <p>@kepooanda@gmail.co.id</p>
+                        <p>kepooanda@gmail.co.id</p>
                       </div>
                     </td>
-                    <td>admin</td>
                     <td>laki-laki</td>
-                    <td>07-06-2025 14:09</td>
+                    <td>admin</td>
+                    <td>08/06/2025 00:04</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <!-- right -->
-          <div class="col shadow-sm rounded p-4 kanan">
-            <div class="waktu mb-2">
-              <h2 class="fs-6 text-capitalize">laporan hari ini</h2>
-              <p>07/06/2025</p>
-            </div>
-            <div class="ms-2">
-              <div class="data text-capitalize d-flex align-items-center border-bottom">
-                <span class="fs-2 fw-semibold me-3">0</span>
-                <p class="fs-5 fw-medium">anggota baru</p>
-              </div>
-              <div class="data text-capitalize d-flex align-items-center border-bottom">
-                <span class="fs-2 fw-semibold me-3">0</span>
-                <p class="fs-5 fw-medium">peminjaman</p>
-              </div>
-              <div class="data text-capitalize d-flex align-items-center border-bottom">
-                <span class="fs-2 fw-semibold me-3">1</span>
-                <p class="fs-5 fw-medium">jatuh tempo</p>
-              </div>
-              <div class="data text-capitalize d-flex align-items-center">
-                <span class="fs-2 fw-semibold me-3">0</span>
-                <p class="fs-5 fw-medium">pengembalian</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+      
     </main>
     <!-- main end -->
 
