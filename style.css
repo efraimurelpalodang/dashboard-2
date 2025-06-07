@@ -18,6 +18,7 @@
 body {
   background: var(--bg-body) !important;
   font-family: "Inter", sans-serif !important;
+  overflow-y: hidden;
 }
 aside > nav {
   background: var(--clr-white) !important;
@@ -131,6 +132,8 @@ main {
   padding: 1.5rem !important;
   /* color: var(--clr-navi); */
 }
+/*todo: main style end */
+
 main .row .halo > p:nth-child(2) {
   color: var(--clr-navi) !important;
 }
@@ -141,4 +144,67 @@ main .informasi .data p:nth-child(2) {
   font-size: .8rem !important;
   margin-top: -.4rem !important;
 }
-/*todo: main style end */
+main .informasi {
+  position: relative !important;
+}
+main .informasi::after {
+  content: "" !important;
+  display: inline-block !important;
+  height: .5px !important;
+  width: 100% !important;
+  position: absolute !important;
+  background: var(--clr-gray) !important;
+  top: 150% !important;
+}
+
+/** table style start */
+main .table-informasi > div {
+  background: var(--clr-white) !important;
+  
+}
+main .table-informasi > div .laporan h1 {
+  color: var(--clr-navi);
+}
+main .table-informasi > div .laporan > p:nth-child(2) {
+  color: #8a8aa0;
+  font-weight: 300;
+  font-size: .9rem;
+}
+main section .table-informasi div .tempat-tabel {
+  max-height: 16rem;
+  overflow: auto;
+  scrollbar-width: none;
+}
+main section .table-informasi > div table  {
+  /* background: red !important; */
+  width: 100% !important;
+}
+main section .table-informasi > div table > thead > tr > th {
+  padding: .5rem 0 !important;
+  color: var(--clr-navi);
+}
+main section .table-informasi > div table > tbody > tr > td {
+  padding: .8rem 0 !important;
+}
+main section .table-informasi > div table > tbody > tr > td img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+}
+main section .table-informasi > div table > tbody > tr > td .keterangan p:last-child {
+  font-size: .8rem !important;
+  text-transform: none !important;
+}
+/** table style end */
+
+/* right style start */
+main section .kanan .waktu h2 {
+  color: var(--clr-navi);
+}
+main section .kanan .waktu p {
+  font-size: .8rem;
+}
+main section .kanan .data p {
+  line-height: 20px;
+}
+/* right style end */
