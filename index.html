@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <!-- jquery -->
+    <script src="jquery-3.7.1.min.js"></script>
     <!-- bootstraps icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- bootstraps style -->
@@ -38,7 +40,7 @@
               <i class="bi bi-chevron-right"></i>
             </a>
             <!-- sub list -->
-            <ul class="d-flex flex-column sub-menu">
+            <ul class="flex-column" id="sub-menu">
               <a href="#" class="aktif">informasi</a>
               <a href="#">ajuan peminjaman</a>
               <a href="#">pengembalian buku</a>
@@ -54,11 +56,11 @@
               <i class="bi bi-chevron-right"></i>
             </a>
             <!-- sub list -->
-            <ul class="d-flex flex-column sub-menu">
+            <ul class="flex-column" id="sub-menu">
               <a href="#">peminjaman</a>
               <a href="#">pengembalian</a>
               <a href="#">denda</a>
-              <a href="#">kategori buku terlaris (KBT)</a>
+              <a href="#">kategori buku terlaris <br>(KBT)</a>
               <a href="#">anggota teraktif</a>
             </ul>
           </li>
@@ -118,6 +120,7 @@
     </main>
     <!-- main end -->
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
 </html>

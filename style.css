@@ -26,6 +26,7 @@ main > aside {
   padding-inline: .5rem !important;
   overflow-y: auto !important;
   scrollbar-width: none !important;
+  transition: .4s all;
 }
 main > aside > .judul > h1 {
   background: linear-gradient(to left, var(--clr-navi), var(--clr-primary)) !important;
@@ -106,9 +107,11 @@ main > aside ul li > a > i {
   font-size: .8rem !important;
 }
 /*todo: list sub-menu style */
-main > aside ul li > ul.sub-menu {
+main > aside ul li > ul {
   margin-left: 2rem !important;
-  display: none !important; /** sub-menu hidden */ 
+}
+main > aside ul li > ul#sub-menu {
+  display: none; /** sub-menu hidden */ 
 }
 main > aside ul li > ul > a {
   display: flex !important;
