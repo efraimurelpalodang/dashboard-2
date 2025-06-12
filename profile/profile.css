@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --clr-primary: #7494ec;
+  --clr-navi: #153d77;
+  --bg-body: #f4f7fc;
+  --clr-gray: #b5b5bd;
+  --bg-active: #E9ECEF;
+  --clr-white: #ffffff;
+}
+
+main {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+main div .list-informasi-akun {
+  background-color: white;
+  color: #102c57;
+  align-self: flex-start !important;
+}
+main div .list-informasi-akun > ul > a {
+  color: #102c57 !important;
+}
+main div .list-informasi-akun > ul > a.aktif {
+  background: #3B7DDD !important;
+  color: #ffffff !important;
+}
+
+/* style kanan */
+main div .informasi-publik,
+main div .informasi-tidak-publik {
+  background-color: white;
+}
+main div .informasi-publik .gambar-informasi {
+  width: 12rem;
+  height: 12rem;
+}
+

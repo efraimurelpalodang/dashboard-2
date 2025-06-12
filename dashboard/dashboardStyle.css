@@ -127,10 +127,12 @@ aside > nav ul li > ul > a.aktif {
 
 /*todo: main style start */
 main {
-  min-height: 100vh !important;
+  max-height: 100vh !important;
   margin-left: 16rem !important;
   padding: 1.5rem !important;
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-y: auto !important;
+  scrollbar-width: none !important;
 }
 /*todo: main style end */
 
