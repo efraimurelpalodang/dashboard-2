@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Login Page</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+  
+  <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>  
+  <div class="container-fluid login-container h-100">  
+    <div class="row g-0 h-100">  
+      <div class="col-6 left-panel d-flex align-items-center justify-content-center">  
+        <div class="form-wrapper text-capitalize">  
+          <h2><b>selamat datang</b></h2>  
+          <p class="text-muted">selamat datang di from login, silahkan login </p>  
+          <form>  
+            <div class="mb-3">
+              <label for="email" class="form-label">email</label>  
+              <input type="email" class="form-control" placeholder="Masukkan email anda" id="email" autocomplete="off">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">password</label>  
+              <input type="password" class="form-control" placeholder="Masukkan password anda" id="password" autocomplete="off">  
+            </div>
+
+            <div class="text-end mb-3">  
+              <a href="#" class="text-decoration-none text-capitalized">lupa password ?</a>  
+            </div>  
+
+            <button type="submit" class="btn btn-dark text-capitalize">login</button>  
+            <button type="button" class="btn btn-outline-secondary">  
+              <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google Icon" class="me-2">  
+              Masuk Menggunakan Google  
+            </button>  
+
+            <p class="text-muted mt-3">belum memiliki akun ? <a href="register.html" class="fw-semibold text-decoration-none">buat akun sekarang</a></p>  
+          </form>  
+        </div>  
+      </div>  
+
+      <div class="col-6 right-panel">  
+        <div class="caption-overlay">Membaca di e-perpusjar</div>  
+        <div id="carouselImages" class="carousel slide h-100" data-bs-ride="carousel">  
+          <div class="carousel-inner h-100">  
+            <div class="carousel-item active h-100">  
+              <img src="gambar-form/1.png" class="d-block w-100" alt="Slide 1">  
+            </div>  
+            <div class="carousel-item h-100">  
+              <img src="gambar-form/2.png" class="d-block w-100" alt="Slide 2">  
+            </div>  
+            <div class="carousel-item h-100">  
+              <img src="gambar-form/3.png" class="d-block w-100" alt="Slide 3">  
+            </div>  
+          </div>  
+        </div>  
+      </div>  
+    </div>
+  </div>  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
